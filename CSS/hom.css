@@ -84,14 +84,20 @@
 		width:70%;
 }
 .fades{
-	animation:fades 2s infinite;	
+	animation:fades 6s infinite;	
 }
 @keyframes fades{
 	0%{
-		opacity:0;
+		opacity:1.0;
+	}
+	33%{
+		opacity:1.0;
+	}
+	98%{
+		opacity:1.0;
 	}
 	100%{
-		opacity:1.0;
+		opacity:0.4;
 	}
 }
 body{
