@@ -39,7 +39,7 @@
 	position:fixed;
 	z-index:1;
 	text-color:white;
-	background-image:url("img_9.jpg");
+	background-image:url("CSS_Images/img_9.jpg");
 	background-size:cover;
 	animation:bar 2s ease-in-out;
 }
@@ -101,7 +101,7 @@
 	}
 }
 body{
-	background-image:url("img_10.jpg");
+	background-image:url("CSS_Images/img_10.jpg");
 	background-size:cover;
 	background-attachment:fixed;
 	z-index:-1;
