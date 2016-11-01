@@ -1,8 +1,8 @@
 .mySlides {display:none;
 }
 .img1{
-	height:600px;
-	width:1390px;
+	height:500px;
+	width:1200px;
 }
 .img1 img{
 	width:99%;	
@@ -10,13 +10,13 @@
 }
 .center {
 	margin: 0;
-	width: 1390px;
-	height:600px;
+	width: 1200px;
+	height:500px;
 	padding: 0px;
 	display:block;
 	position:absolute;
 	top:25%;
-	left:14%;
+	left:10%;
 	
 }
 .center1 {
@@ -115,6 +115,7 @@ body{
 	background-color:#0d0d0d;
 	z-index:2;
 	animation:fade 2s ease-in-out;
+
 }
 @keyframes fade{
   0% {
@@ -178,7 +179,7 @@ input[type=text]:focus {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
 	cursor: pointer;
 	height:100%;
 	width:5%;
