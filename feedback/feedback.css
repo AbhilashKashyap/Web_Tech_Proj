@@ -1,0 +1,20 @@
+body {
+		background-image:url("img_13.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:fixed;		
+}
+#hey{
+		color:white;
+		position:absolute;
+		top:35%;
+		left:35%;
+		text-align:center;
+}
+.center{
+	position:absolute;
+	top:25%;
+	left:41%;
+	font-size:3em;
+	color:blue;
+}

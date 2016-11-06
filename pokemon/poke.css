@@ -1,0 +1,68 @@
+body{
+	background-image:url("back.jpg");
+	position:relative;
+	top:18%
+}
+h1{
+	font: italic bold Georgia, serif;
+	color:yellow;
+}
+
+.poke1{
+	width:350px;
+	position:relative;
+	left:35%;
+	
+}
+p{
+	font: italic bold 12px/20px Georgia, serif;
+	}
+.poke2{
+	width:200px;
+	 float: right;
+    margin: 0 0 10px 10px;
+	
+}
+.poke5{
+	width:150px;
+	 float: left;
+    margin: 0 0 10px 10px;
+	
+}
+.poke7{
+	width:150px;
+	 float: left;
+    margin: 0 0 10px 10px;
+	
+}	
+			
+#poke8{
+    width: 100px;
+    height: 100px;
+    background: red;
+    
+    transition: width 2s, height 2s;
+}
+
+#poke8:hover {
+    width: 150px;
+    height: 150px;
+}
+
+#poke9{
+    width: 100px;
+    height: 100px;
+    background: red;
+    
+    transition: width 2s, height 2s;
+}
+
+#poke9:hover {
+    width: 150px;
+    height: 150px;
+}
+
+.poke10{
+	width:50%;
+	height:50%;
+	}

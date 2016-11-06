@@ -1,0 +1,12 @@
+body{
+				background-image:url("img_15.jpeg");
+				background-size:cover;
+				background-attachment:fixed;
+		}
+		.img{
+			margin-top:5%;
+			margin-left:13.5%;
+			height:514.2px;
+			width:1200px;
+		}
+
