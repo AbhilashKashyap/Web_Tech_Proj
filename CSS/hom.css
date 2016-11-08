@@ -167,9 +167,17 @@ body{
     height:100%;
     transition: width 4s ease-in-out;
 }
+input[type=text] {
+	animation:fadese 5s;
+}
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
-    height: 60%;
+    height: 30px;
+}
+@keyframes fadese{
+	0%{opacity:0.0;}
+	80%{opacity:0.0;}
+	100%{opacity:1.0;}
 }
 .button {
 	background-color: #0d0d0d;

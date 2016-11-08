@@ -1,14 +1,15 @@
 <html>
 <head>
 <link rel="stylesheet" href="CSS/hom.css">
-		<div class="center1 first"><img class="logo" src="Images/geek.jpg"></div>
+		<div class="first"><img class="logo" src="Images/geek.jpg"></div>
 		<div class="mainbar">
 			<a href="home.html"><img class="barsize home" style="position:relative; top:0;left:0;" src="Images/home.jpg"></a>
-			<input type="text" name="search" placeholder="Search.." style="position:absolute; top:25%; left:90%;">
-			<button style="position:relative; top:-40%; left:-0.5%;" class="button home">Geekipedia</button>
+			<a href="geekipedia.html"><button style="position:relative; top:-40%; left:-0.5%;" class="button home">Geekipedia</button></a>
 			<button style="position:relative; top:-40%; left:-0.65%;" class="button home">News</button>
 			<a href="feedback.html"><button style="position:relative; top:-40%; left:-0.75%;" class="button home">Feedback</button></a>
 		</div>
+		<form name="search1" method="post" action="test4.php" id="search" onsubmit="return false"><input type="text" id="search1" name="search" placeholder="Search.." style="position:fixed; top:16%; left:90%; z-index:6;"></form>
+		
 <link rel="stylesheet" href="star wars/star.css">
 <link rel="stylesheet" href="CSS/animate.css">
 <link rel="stylesheet" href="JS/wow.min.js">
@@ -49,7 +50,16 @@ The American Film Institute listed him as the third greatest movie villain in ci
 <center><img class="luke  wow fadeInLeft animated" data-wow-delay="1s" src="star wars/img1.jpg"></center>
 <p>Yoda is a fictional character in the Star Wars space opera franchise created by George Lucas, first appearing in the 1980 film The Empire Strikes Back. In the original films, he trains Luke Skywalker to fight against the Galactic Empire. In the prequel films, he serves as the Grand Master of the Jedi Order and as a high-ranking general of Clone Troopers in the Clone Wars. Following his death in Return of the Jedi, he was the oldest Star Wars character ever, before having that record broken by Maz Kanata in Star Wars: The Force Awakens.</p>
 
-
+<script>
+			document.getElementById("search").onsubmit=f1;
+			function f1(){
+				test=document.getElementById("search1");
+				if(test.value.trim()){
+					return true;
+				}
+				return false;			
+			}
+		</script>
 
 </body>
 </html>
