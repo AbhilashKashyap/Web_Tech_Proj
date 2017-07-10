@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="form.css">
+
+<style>
+		
+
+div.margin {
+    margin: 20px 0 20px 0;
+    padding: 20px;
+	
+	
+}
+
+div.ola1 {
+    margin: 50px 150px 300px 150px;
+    padding: 20px;
+	border: 5px solid #999999;
+    background-color: #34495e;
+    text-align: center;
+	
+	
+}
+		
+</style>
+</head>
+<body>
+<div class="block -berry edge--bottom">
+    <h1>Pizza Cafe|</h1>
+
+    <nav class="menu">
+        <a href="demo2.html" class=".menuitem">Home</a>
+        <a href="#" class=".menuitem">About</a>
+        <a href="table.html" class=".menuitem">Info</a>
+        <a href="pizza_home.html" class=".menuitem">Customer</a>
+        <a href="#" class=".menuitem">Employee</a>
+        <a href="#" class=".menuitem">Contact</a>
+        <div class="animation start-home"></div>
+    </nav>
+    </div>
+
+</div> 
+<center><h1>Payment Details</h1></center>
+<div class="ola1">
+<form name="myForm" method="get" action="form2.php" onsubmit="return validateForm()" class="topBefore" > 
+Card Number:<br><input type="text" name="card-no" required><br><br><br>
+Card Name:<br><input type="text" name="card_name" required><br><br><br>
+Card Type:<br><input type="text" name="card_type" required><br><br><br>
+Card expiry date:<br><input type="text" name="card-exp-date" required><br><br><br>
+Card Security code:<br><input type="text" name="card-sec-code" required><br><br><br>
+
+
+<input type="submit" value="Submit">
+</form>
+
+
+</div> 
+
+
+</body>
+
+<script>
+ var a = document.forms["myForm"]["card-exp-date"].value;
+    var atpos[3] = a.split("/");
+    var dotpos = a.lastIndexOf(".");
+    if (atpos[0]<1 ||atpos[0]<31 || atpos[1]<1||atpos[1]>12|| atpos[2]<current_date) {
+        alert("Not a valid date");
+        return false;
+    
+}
+</script>
+</html>

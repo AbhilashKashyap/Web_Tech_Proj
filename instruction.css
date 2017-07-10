@@ -1,0 +1,35 @@
+.info
+{
+	position:absolute;
+	left:20%;
+	top:20%;
+	display:block;
+	height:500px;
+	width:1000px;
+	font-size:24px;
+}
+.hea
+{
+	position:absolute;
+	left:40%;
+	top:10%;
+	
+}
+.butto
+{
+	position:absolute;
+	left:43%;
+	top:80%;
+}
+body
+{
+	background-image:url("blackbg.jpg");
+	color:white;
+}
+.img1
+{
+
+	height:200px;
+	width:250px;
+	
+}

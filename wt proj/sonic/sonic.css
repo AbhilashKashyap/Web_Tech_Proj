@@ -1,0 +1,30 @@
+
+body{
+	background-color:black;
+	position:relative;
+	top:18%
+}
+h1{
+	font: italic bold Georgia, serif;
+	color:blue;
+}
+
+.img1{
+	width:50%;
+	height:30%;
+	}
+
+p{
+	font: italic bold Georgia, serif;
+	color:blue;
+	}
+.img3{
+	width:25%;
+	height:25%;
+	}
+h2{
+	font: italic bold Georgia, serif;
+	color:blue;
+}
+
+

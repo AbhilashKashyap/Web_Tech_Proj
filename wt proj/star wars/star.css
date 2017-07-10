@@ -1,0 +1,30 @@
+*{
+	color:white;
+	font-style: italic;
+}
+body{
+	 background-image: url("back.jpg");
+	 position:relative;
+	top:18%
+}
+h2{
+	color:white;
+	
+
+}
+.star{
+	width:300px;
+	margin:10px;
+}
+.vader{
+	width:500px;
+}
+.star1{
+	position:relative;
+	left:30%;
+}
+.dv1{
+	width:30%;
+	position:relative;
+	margin-top:50px;	
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<head>
+		<title>Geeks</title>
+		<link rel="stylesheet" href="CSS/hom.css">
+		<div class="first"><img class="logo" src="Images/geek.jpg"></div>
+		<div class="mainbar">
+			<a href="home.html"><img class="barsize home" style="position:relative; top:0;left:0;" src="Images/home.jpg"></a>
+			<a href="geekipedia.html"><button style="position:relative; top:-40%; left:-0.5%;" class="button home">Geekipedia</button></a>
+			<a href="news.html"><button style="position:relative; top:-40%; left:-0.65%;" class="button home">News</button></a>
+			<a href="feedback.html"><button style="position:relative; top:-40%; left:-0.75%;" class="button home">Feedback</button></a>
+		</div>
+		<form name="search1" method="post" action="test4.php" id="search" onsubmit="return false"><input type="text" id="search1" name="search" placeholder="Search.." style="position:fixed; top:16%; left:90%; z-index:6;"></form>
+		
+		<link rel="stylesheet" type="text/css" href="CSS/Writeup.css"/>
+	</head>
+	<body style="margin-left: 300px; background-image:url('Images/img_12.jpeg'); background-size:cover;"  >
+	<div style="position:absolute; left:27%; top:18%;">
+		<h1>About Us!</h1>
+		<div class="">
+		<div class="img">
+		<img src="Aboutus/Nether.jpg" alt="Arun Joh11n" height="200px">
+		</div>
+		
+		<div class="text">
+			<span style="font-size:30px;"><br/>#</span> Byronic Idealist. INTJ. Very interested in outer space. Doodles in free time. Gamer.
+			Workaholic. Probably born in the wrong century. Grammar Nazi. Big fan of Calvin and Hobbes.
+			Would probably bribe you with baked goods to join the Dark Side.
+			<br><br>
+			<q style={"font-size:50px; important:important;"}>Never apologize for burning too brightly or collapsing into yourself every night,for that is how galaxies are made.
+							(-Tyler Kent White)</q><span style="font-size:30px;"><br/>#</span> 
+
+		</div>
+	
+
+		<div id='geeks'>
+		<img src="Aboutus/Abhilash.jpg"  alt="Arun Joh11n" height="200px" style="border-radius:25px;">
+		</div>
+		<div class="text_1">
+					
+		<span style="font-size:30px;">/*<br/></span>I am Abhilash Kashyap and I am currently pursuing B.Tech ( Computer Science ) at PES University, Bangalore. 
+		I am passionate in hands on learning. I also love to travel as a part of my profession.
+		Absolutely love cooking. Big time foodie. Loves to socialize with people. Tend to scare people with my laugh. My motto:
+		<br><br>
+ 		<q>Yesterday is history,
+		tomorrow is a mystery, 
+		and today is a gift... 
+		that's why they call it present” 
+				 Master Oogway</q><span style="font-size:30px;"><br/>*/</span> 
+					
+
+		</div>
+	
+		<div>
+		<img src="Aboutus/Mayank.jpg" class="geeks11" alt="Arun Joh11n" height="200px">
+		</div>
+		<div class="text_2">
+			<span style="font-size:30px;">$<br/></span> I am Mayank Kejriwal and I am currently pursuing B. Tech at PES University,Bangalore.
+			Like any other Indian,I am a big cricket fan.I want to make a programming language which can be used by common people and not only the programmers.
+			<br><br><q>"Hard work always pays off"</q>
+			<span style="font-size:30px;"><br/><br/>$</span> 
+
+		</div>
+		<script>
+			document.getElementById("search").onsubmit=f1;
+			function f1(){
+				test=document.getElementById("search1");
+				if(test.value.trim()){
+					return true;
+				}
+				return false;			
+			}
+		</script>
+		
+	
+	</body>
+
+</html>	

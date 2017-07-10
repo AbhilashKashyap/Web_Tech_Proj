@@ -1,0 +1,37 @@
+body
+{
+	background-image:url("blackbg.jpg");
+	color:white;
+}
+.count
+{
+	position:absolute;
+	left:35%;
+	top:20%;
+	display:block;
+	height:500px;
+	width:600px;
+
+}
+.que
+{
+	position:absolute;
+	left:35%;
+	top:25%;
+	display:block;
+	height:500px;
+	width:600px;
+	
+	
+}
+.ans
+{
+	position:absolute;
+	left:35%;
+	top:37%;
+	display:block;
+	height:500px;
+	width:600px;
+	z-index:1;
+	
+}

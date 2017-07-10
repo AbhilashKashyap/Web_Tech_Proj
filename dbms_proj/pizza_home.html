@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body{
+	background-color:black;
+}		
+
+div.margin {
+    background-color:#e60000;
+    color: black;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+	
+	
+}
+
+div.ola1 {
+    background-color:#f2f2f2;
+    color: black;
+    margin: 50px 150px 300px 150px;
+    padding: 20px;
+	border: 5px solid #999999;
+  
+	
+	
+}
+h1{
+	color: white;
+	}
+		
+</style>
+</head>
+<body>
+<div class="margin">
+
+<center><img src="img2.png" style="width:304px;height:100px;"></center>
+
+
+</div> 
+<center><h1>Customer Details</h1></center>
+<div class="ola1">
+<form name="myForm" method="get" action="form2.php" onsubmit="return validateForm()" > 
+Customer ID:<br><input type="text" name="cust_id" required><br><br><br>
+First Name:<br><input type="text" name="cust_fname" required><br><br><br>
+Last Name:<br><input type="text" name="cust_lname" required><br><br><br>
+Address:<br><input type="text" name="cust_address" required><br><br><br>
+City:<br><input type="text" name="cust_city" required><br><br><br>
+State:<br><input type="text" name="cust_state" required><br><br><br>
+Postcode:<br><input type="text" name="cust_postcode" required><br><br><br>
+Mobile:<br><input type="text" name="cust_mobile" required><br><br><br>
+Email:<br><input type="text" name="cust_email" required> <br><br><br>
+
+<input type="submit" value="Submit">
+</form>
+
+
+</div> 
+
+
+</body>
+
+<script>
+ var a = document.forms["myForm"]["cust_email"].value;
+    var atpos = a.indexOf("@");
+    var dotpos = a.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=a.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    
+}
+</script>
+</html>

@@ -1,0 +1,75 @@
+</head>
+<body>
+<ul>
+  <li style="background-color:#5dade2"><a href="#airport">Kempegowda International Airport </a></li>	
+  <li><a href="home.html">Home</a></li>
+  <li><a class="present" href="#book">Book</a></li>
+  <li><a href="schedule.php">Schedule</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#ffa07a;height:1500px;">
+
+<h1> Kempegowda International Airport </h1>
+</style>
+
+<div class="slide">
+<img class="Slides" src="plane1.jpg" width="1000px" height="550px">
+<img class="Slides" src="airport1.jpg" width="1000px" height="550px">
+<img class="Slides" src="airport2.jpg" width="1000px" height="550px">
+<img class="Slides" src="airport3.jpg" width="1000px" height="550px">
+<img class="Slides" src="airport5.jpg" width="1000px" height="550px">
+</div>
+<br>
+<br>
+<br>
+<div class="form1">
+
+<form name="book" method="get" action="book.php"> 
+  From:
+  <select name="from">
+    <option value="A-BLR">Bengaluru</option>
+    <option value="A-DEL">Delhi</option>
+    <option value="A-MUM">Mumbai</option>
+    <option value="A-CHE">Chennai</option>
+    <option value="A-HYD">Hyderabad</option>
+  </select>
+  To:
+  <select name="to">
+    <option value="A-BLR">Bengaluru</option>
+    <option value="A-DEL">Delhi</option>
+    <option value="A-MUM">Mumbai</option>
+    <option value="A-CHE">Chennai</option>
+    <option value="A-HYD">Hyderabad</option>
+  </select>
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+</div>
+</div>
+<?php 
+    session_start();
+    extract($_GET);
+    /*$_SESSION['cust_id']=$cust_id;*/
+    $con=mysqli_connect('localhost','root','','airport');
+
+    $query = "select f_no,from_city,to_city,arrival_time,arrival_terminal_no from flights where from_city = '$from' and to_city = '$to'";
+    $result = $con->query($query);
+    if(!$result)
+        die($con->error);
+
+    $rows = $result->num_rows;
+    echo "<table border: '2px'><tr> <th> Flight no </th> <th> From </th> <th> To </th> <th> Arrival time </th> <th> Arrival terminal no </th> </tr>";
+    for($j = 0 ; $j < $rows ; ++$j)
+    {
+        $result->data_seek($j);
+        $row = $result->fetch_array(MYSQLI_NUM);
+        echo "<tr>";
+        for($k = 0 ; $k < 5 ; ++$k)
+            echo "<td>$row[$k]</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+?>
+</div>

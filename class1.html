@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form onsubmit="store()">
+<input type="text" id="ls"/>
+<input type="submit" id="storeLs"/>
+<input type="button" value="retrieve"  id="retrieve" onclick="ret()"/>
+
+</form>
+<p id="hey">hey what are you doing ?</p>
+
+<script>
+var input=document.getElementById("ls");
+function store(){
+	localStorage.setItem("name",input.value);
+	alert("storage done");
+}                   
+
+function ret(){
+	alert(localStorage.length);
+	//alert(localStorage.key(1));
+	//alert(localStorage.getItem("name"));
+   // localStorage.removeItem("name");
+	
+}
+/*win.addEventListener("storage",func,false);
+function func(){
+		document.getElementById("hey").style.color="red";
+}
+
+*/
+</script>
+</body>
+</html>

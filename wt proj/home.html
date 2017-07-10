@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Geek World </title>
+		<link rel="shortcut icon" href="Images/geek.ico">
+	</head>
+	<img src="Images/927803.gif" id="loader">
+	<body onload="myFunction();">
+	<div style="display:none;" id="myDiv">	
+		<link rel="stylesheet" href="CSS/hom.css">
+		<div class="first"><img class="logo" src="Images/geek.jpg"></div>
+		<div class="mainbar">
+			<a href="home.html"><img class="barsize home" style="position:relative; top:0;left:0;" src="Images/home.jpg"></a>
+			<a href="geekipedia.html"><button style="position:relative; top:-40%; left:-0.5%;" class="button home">Geekipedia</button></a>
+			<a href="news.html"><button style="position:relative; top:-40%; left:-0.65%;" class="button home">News</button></a>
+			<a href="feedback.html"><button style="position:relative; top:-40%; left:-0.75%;" class="button home">Feedback</button></a>
+		</div>
+		<form name="search1" method="post" action="test4.php" id="search" onsubmit="return false"><input type="text" id="search1" name="search" placeholder="Search.." style="position:fixed; top:16%; left:90%; z-index:6;"></form>
+		<div class="slideshow fading">
+			<div class="center mySlides fades"><a href="instructions.php"><img src="Images/quiz.jpg" class="img1 slideimg"></a><div class="caption"><center>Find Out!</center></div></div>
+			<div class="center mySlides fades"><a href="geekipedia.html"><img src="Images/geekipedia.jpg" class="img1 slideimg"></a><div class="caption"><center>Want To know more?</center></div></div>
+			<div class="center mySlides fades"><a href="feedback.html"><img src="Images/feedback.jpg" class="img1 slideimg"></a><div class="caption"><center>LET US KNOW!</center></div></div>
+			
+		</div>
+		<script src="JS/slide.js"></script>
+		<script>
+			document.getElementById("search").onsubmit=f1;
+			function f1(){
+				test=document.getElementById("search1");
+				if(test.value.trim()){
+					return true;
+				}
+				return false;			
+			}
+		</script>
+	</div>
+	<hr style="color:#404040; background-color:#404040; position:absolute; top:100%; width:100%; z-index:3 border-style:double;">
+	<div style="color:white; position:absolute; top:100%; left:42%; text-align:center;"><p>Copyright  2016  <a href="aboutus.html">About Us</a></p>
+	</div>
+</body>
+</html>
